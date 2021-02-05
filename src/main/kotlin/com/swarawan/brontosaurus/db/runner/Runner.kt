@@ -21,11 +21,15 @@ class Runner constructor(private val repository: DinosaurusRepo) {
             2 -> findAll()
             else -> throw IllegalArgumentException("Pilihan tidak ditemukan")
         }
+        start()
+        scanner.nextLine()
     }
 
     private fun doInsert() {
+        scanner.nextLine()
+
         print("Nama dino : ")
-        val name = scanner.nextLine().toString()
+        val name = scanner.nextLine()
 
         val dinosaur = Dinosaurus(
             name = name,
