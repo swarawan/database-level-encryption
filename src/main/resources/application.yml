@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      properties:
+        hibernate:
+          format-sql: true
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/earth-616?serverTimezone=Asia/Jakarta
+    username: root
+    password: root
